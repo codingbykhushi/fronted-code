@@ -1,0 +1,66 @@
+/* src/components/Header.css */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #2c3e50;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.header-link {
+    color: #ecf0f1;
+    /* Light gray */
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 15px;
+}
+
+.header-link:hover {
+    color: #3498db;
+    /* Light blue */
+}
+
+.header-link:active {
+    color: #e74c3c;
+    /* Red */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header-link {
+        display: none;
+        /* Hide links by default */
+        margin: 10px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-icon {
+        display: block;
+        /* Show menu icon on small screens */
+    }
+
+    .header-container.menu-open .header-link {
+        display: block;
+        /* Show links when menu is open */
+    }
+}

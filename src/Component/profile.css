@@ -1,0 +1,86 @@
+/* General container for the profile */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Profile heading */
+.profile-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1a73e8;
+    /* Blue color for the heading */
+}
+
+/* Profile image styling */
+.profile-container img {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile information list */
+.profile-container p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Bold labels for profile details */
+.profile-container p strong {
+    font-weight: 600;
+    color: #1a73e8;
+    /* Blue color for labels */
+}
+
+/* Add some spacing between the profile details */
+.profile-container p+p {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Colorful details */
+.profile-container p:nth-of-type(1) {
+    background-color: #e3f2fd;
+    /* Light blue */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.profile-container p:nth-of-type(2) {
+    background-color: #f1f8e9;
+    /* Light green */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.profile-container p:nth-of-type(3) {
+    background-color: #fff3e0;
+    /* Light orange */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.profile-container p:nth-of-type(4) {
+    background-color: #fce4ec;
+    /* Light pink */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.profile-container p:nth-of-type(5) {
+    background-color: #e8f5e9;
+    /* Light green */
+    padding: 10px;
+    border-radius: 4px;
+}

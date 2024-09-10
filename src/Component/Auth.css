@@ -1,0 +1,77 @@
+.auth-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Input fields */
+.auth-form input,
+.auth-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Submit button */
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+    background-color: #2980b9;
+}
+
+/* Link to switch to another form */
+.switch-link {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.switch-link:hover {
+    color: #2980b9;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .auth-form {
+        padding: 20px;
+    }
+
+    .auth-form input,
+    .auth-form select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .auth-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .switch-link {
+        font-size: 12px;
+    }
+}
