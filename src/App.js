@@ -25,6 +25,8 @@ import SearchBar from './Component/SearchBar.js';
 import RatingPage from './Component/RatingPage.js'
 import OurServices from './Component/OurServices.js';
 
+
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [role, setRole] = useState('');
@@ -45,6 +47,7 @@ function App() {
   return (
     <UserProvider>
       <div className="App">
+        
         
         {!isLoggedIn ? (
           <>
@@ -81,6 +84,7 @@ function App() {
               <Route path='/myrooms' element={role === 'tenant' ? <Viewbooking></Viewbooking> : <Myrooms />} />
               <Route path="/rate-room/:roomId" element={<RatingPage/>} /> 
               <Route path="/services" element={<OurServices/>} /> 
+             
               {/* Add additional routes if needed */}
             </Routes>
 

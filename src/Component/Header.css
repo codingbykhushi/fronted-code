@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    background-color: #2c3e50;
+    background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 0 20px;
@@ -13,7 +13,7 @@
 }
 
 .header-link {
-    color: #ecf0f1;
+    color: black;
     /* Light gray */
     font-size: 1.1em;
     font-weight: bold;

@@ -17,6 +17,14 @@ function TenentHeader({ onLogout, role }) {
                 <div className="menu-icon" onClick={toggleMenu}>
                     &#9776;
                 </div>
+                <Link to="/" className="header-logo">
+                <img 
+                    src="https://images.craigslist.org/00101_fY67VT6sqz4_084084_600x450.jpg" 
+                    alt="Room Nest Hub Logo" 
+                    className="logo"
+                    style={{ height: '100px', width: '120px' }} // Set the height and width here
+                />
+            </Link>
                 <Link to="/profile" className="header-link">
                     <small>Profile</small>
                 </Link>
